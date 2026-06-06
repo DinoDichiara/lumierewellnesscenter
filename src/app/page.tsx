@@ -2,12 +2,15 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 
 type Service = {
   id: number;
   name: string;
+  name_es: string;
   category: string;
   description: string;
+  description_es: string;
   duration: string;
   price: string;
   featured: boolean;
@@ -27,29 +30,34 @@ function SkeletonCard() {
 }
 
 export default function HomePage() {
+  const { t, locale } = useLanguage();
   const [featured, setFeatured] = useState<Service[] | null>(null);
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
   useEffect(() => {
-    fetch("/data/services.json")
+    fetch(`${basePath}/data/services.json`)
       .then((r) => r.json())
       .then((data: Service[]) => setFeatured(data.filter((s) => s.featured).slice(0, 3)))
       .catch(() => setFeatured([]));
   }, []);
+
+  const stepIcons = ["🧖", "✨", "🌿"];
 
   return (
     <>
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero__content">
-          <span className="hero__eyebrow">Estética facial · Buenos Aires</span>
+          <span className="hero__eyebrow">{t.hero.eyebrow}</span>
           <h1 className="hero__title" id="hero-title">
-            Tu piel,<br />en su<br /><em>mejor versión</em>
+            {t.hero.titleParts[0]}<br />
+            {t.hero.titleParts[1]}<br />
+            <em>{t.hero.titleParts[2]}</em>
           </h1>
-          <p className="hero__sub">
-            Rituales personalizados que combinan ciencia y sensorialidad para una piel saludable, luminosa y en equilibrio.
-          </p>
+          <p className="hero__sub">{t.hero.sub}</p>
           <Link href="/services" className="btn btn--primary">
-            Descubrir servicios <span aria-hidden="true">→</span>
+            {t.hero.cta}
           </Link>
         </div>
 
@@ -61,7 +69,7 @@ export default function HomePage() {
 
       {/* ── Philosophy Strip ─────────────────────────────────── */}
       <div className="strip" aria-hidden="true">
-        <p className="strip__quote">&ldquo;Cuidado consciente. Resultados visibles. Bienestar genuino.&rdquo;</p>
+        <p className="strip__quote">{t.strip.quote}</p>
       </div>
 
 
@@ -70,10 +78,10 @@ export default function HomePage() {
         <div className="container">
           <div className="services-section__header">
             <div>
-              <span className="section-label">Tratamientos</span>
-              <h2 className="services-section__title" id="services-title">Nuestros tratamientos</h2>
+              <span className="section-label">{t.services.label}</span>
+              <h2 className="services-section__title" id="services-title">{t.services.title}</h2>
             </div>
-            <Link href="/services" className="btn btn--outline">Ver todos los servicios</Link>
+            <Link href="/services" className="btn btn--outline">{t.services.viewAll}</Link>
           </div>
 
           <div className="services-grid" aria-live="polite">
@@ -85,21 +93,18 @@ export default function HomePage() {
               </>
             ) : featured.length === 0 ? (
               <p style={{ color: "var(--color-muted)", gridColumn: "1/-1", textAlign: "center", padding: "2rem 0" }}>
-                No se pudieron cargar los servicios. Por favor, intentá más tarde.
+                {locale === "en" ? "Could not load services. Please try again later." : "No se pudieron cargar los servicios. Por favor, intentá más tarde."}
               </p>
             ) : (
               featured.map((svc, i) => (
-                <article
-                  key={svc.id}
-                  className={`service-card${i === 0 ? " service-card--featured" : ""}`}
-                >
+                <article key={svc.id} className={`service-card${i === 0 ? " service-card--featured" : ""}`}>
                   <div className="service-card__img-wrap">
                     <div className="img-placeholder">service-{i + 1}.jpg</div>
                   </div>
                   <div className="service-card__body">
-                    <h3 className="service-card__name">{svc.name}</h3>
-                    <p className="service-card__desc">{svc.description}</p>
-                    <Link href="/services" className="service-card__link">Ver más</Link>
+                    <h3 className="service-card__name">{locale === "en" ? svc.name : svc.name_es}</h3>
+                    <p className="service-card__desc">{locale === "en" ? svc.description : svc.description_es}</p>
+                    <Link href="/services" className="service-card__link">{t.services.viewMore}</Link>
                   </div>
                 </article>
               ))
@@ -118,19 +123,13 @@ export default function HomePage() {
             </div>
 
             <div className="about__content">
-              <span className="section-label">Nuestra historia</span>
-              <h2 className="about__title" id="about-title">
-                Una mirada diferente sobre el cuidado de la piel
-              </h2>
+              <span className="section-label">{t.about.label}</span>
+              <h2 className="about__title" id="about-title">{t.about.title}</h2>
               <div className="about__divider" aria-hidden="true" />
-              <p className="about__text">
-                Lumiere Wellness Center nació de la convicción de que cada piel cuenta su propia historia. No creemos en rutinas genéricas ni en soluciones express: creemos en el tiempo que se dedica a escuchar, analizar y diseñar protocolos realmente adaptados a cada persona.
-              </p>
-              <p className="about__text">
-                Trabajamos con ingredientes activos de alta eficacia, tecnologías de última generación y, sobre todo, con las manos y la atención que merecés. Porque el verdadero lujo es sentirte bien en tu propia piel.
-              </p>
+              <p className="about__text">{t.about.p1}</p>
+              <p className="about__text">{t.about.p2}</p>
               <Link href="/services" className="btn btn--outline" style={{ marginTop: "0.5rem" }}>
-                Conocer los tratamientos
+                {t.about.cta}
               </Link>
             </div>
           </div>
@@ -141,39 +140,19 @@ export default function HomePage() {
       {/* ── Ritual / Process ──────────────────────────────────── */}
       <section className="ritual section" aria-labelledby="ritual-title">
         <div className="container">
-          <span className="section-label" style={{ textAlign: "center", display: "block" }}>El proceso</span>
-          <h2 className="ritual__title" id="ritual-title">¿Cómo es una sesión?</h2>
-          <p className="ritual__sub">
-            Cada visita está diseñada para que te sientas acompañada desde el primer momento.
-          </p>
+          <span className="section-label" style={{ textAlign: "center", display: "block" }}>{t.ritual.label}</span>
+          <h2 className="ritual__title" id="ritual-title">{t.ritual.title}</h2>
+          <p className="ritual__sub">{t.ritual.sub}</p>
 
           <div className="ritual__steps" role="list">
-            <div className="ritual__step" role="listitem">
-              <div className="ritual__step-icon" aria-hidden="true">🧖</div>
-              <span className="ritual__step-num">Paso 01</span>
-              <h3 className="ritual__step-name">Diagnóstico</h3>
-              <p className="ritual__step-desc">
-                Analizamos tu piel, tu rutina actual y tus objetivos para diseñar el protocolo ideal.
-              </p>
-            </div>
-
-            <div className="ritual__step" role="listitem">
-              <div className="ritual__step-icon" aria-hidden="true">✨</div>
-              <span className="ritual__step-num">Paso 02</span>
-              <h3 className="ritual__step-name">Tratamiento</h3>
-              <p className="ritual__step-desc">
-                Aplicamos las técnicas y activos seleccionados con el tiempo y la precisión que cada paso requiere.
-              </p>
-            </div>
-
-            <div className="ritual__step" role="listitem">
-              <div className="ritual__step-icon" aria-hidden="true">🌿</div>
-              <span className="ritual__step-num">Paso 03</span>
-              <h3 className="ritual__step-name">Pautas personalizadas</h3>
-              <p className="ritual__step-desc">
-                Te asesoramos sobre cómo cuidar los resultados en casa con una rutina pensada para vos.
-              </p>
-            </div>
+            {t.ritual.steps.map((step, i) => (
+              <div key={i} className="ritual__step" role="listitem">
+                <div className="ritual__step-icon" aria-hidden="true">{stepIcons[i]}</div>
+                <span className="ritual__step-num">{step.num}</span>
+                <h3 className="ritual__step-name">{step.name}</h3>
+                <p className="ritual__step-desc">{step.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -182,10 +161,10 @@ export default function HomePage() {
       {/* ── Gallery Teaser ────────────────────────────────────── */}
       <section className="gallery section" aria-labelledby="gallery-title">
         <div className="container">
-          <span className="section-label" style={{ textAlign: "center", display: "block" }}>Galería</span>
-          <h2 className="gallery__title" id="gallery-title">Momentos</h2>
+          <span className="section-label" style={{ textAlign: "center", display: "block" }}>{t.gallery.label}</span>
+          <h2 className="gallery__title" id="gallery-title">{t.gallery.title}</h2>
 
-          <div className="gallery__grid" aria-label="Galería de imágenes">
+          <div className="gallery__grid" aria-label="Gallery">
             <div className="gallery__item"><div className="img-placeholder">gallery-1.jpg</div></div>
             <div className="gallery__item"><div className="img-placeholder">gallery-2.jpg</div></div>
             <div className="gallery__item"><div className="img-placeholder">gallery-3.jpg</div></div>
@@ -198,18 +177,16 @@ export default function HomePage() {
       {/* ── CTA Banner ────────────────────────────────────────── */}
       <section className="cta-banner" id="contacto" aria-labelledby="cta-title">
         <div className="container">
-          <span className="section-label" style={{ color: "rgba(255,255,255,0.65)" }}>Reservas</span>
-          <h2 className="cta-banner__title" id="cta-title">Reservá tu ritual</h2>
-          <p className="cta-banner__sub">
-            Tomáte el tiempo que merecés. Escribinos y encontramos juntas el turno perfecto para vos.
-          </p>
+          <span className="section-label" style={{ color: "rgba(255,255,255,0.65)" }}>{t.cta.label}</span>
+          <h2 className="cta-banner__title" id="cta-title">{t.cta.title}</h2>
+          <p className="cta-banner__sub">{t.cta.sub}</p>
           <a
-            href="https://wa.me/549XXXXXXXXXX?text=Hola!%20Quiero%20reservar%20un%20turno%20en%20Lumiere%20Wellness%20Center."
+            href="https://wa.me/549XXXXXXXXXX?text=Hi!%20I%20want%20to%20book%20an%20appointment%20at%20Lumiere%20Wellness%20Center."
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn--outline-white"
           >
-            Escribinos por WhatsApp
+            {t.cta.button}
           </a>
         </div>
       </section>

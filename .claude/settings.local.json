@@ -8,7 +8,9 @@
       "Bash(sh)",
       "Bash(ls /Users/dinodichiara/studio_proyects/lumiere_wellness_center/../)",
       "Bash(mkdir -p /Users/dinodichiara/studio_proyects/lucila_facial/data /Users/dinodichiara/studio_proyects/lucila_facial/images && echo \"done\")",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(npx tsc *)",
+      "mcp__Claude_Preview__preview_start"
     ]
   }
 }
