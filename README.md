@@ -22,7 +22,7 @@ A modern, elegant beauty studio website built with Next.js 14, TypeScript, and T
 1. Clone the repository:
    ```bash
    git clone <your-repo-url>
-   cd lucibeauty-la
+   cd lumierewellnesscenter
    ```
 
 2. Install dependencies:
