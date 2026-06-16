@@ -13,7 +13,6 @@ type Service = {
   description_es: string;
   duration: string;
   price: string;
-  featured: boolean;
 };
 
 function SkeletonCard() {
@@ -36,7 +35,7 @@ export default function ServicesPage() {
   const [activeFilter, setActiveFilter] = useState("all");
   const [categories, setCategories] = useState<{ en: string; es: string }[]>([]);
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  const basePath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "");
 
   useEffect(() => {
     fetch(`${basePath}/data/services.json`)

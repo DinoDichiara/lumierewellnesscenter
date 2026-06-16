@@ -10,7 +10,7 @@ export const translations = {
       book: "Book Now",
     },
     hero: {
-      eyebrow: "Facial aesthetics · Los Angeles",
+      eyebrow: "Facial · Los Angeles",
       titleParts: ["Your skin,", "at its", "best"] as const,
       sub: "Personalized rituals that combine science and sensoriality for healthy, luminous, and balanced skin.",
       cta: "Discover services →",
@@ -97,7 +97,7 @@ export const translations = {
       book: "Reservar",
     },
     hero: {
-      eyebrow: "Estética facial · Los Angeles",
+      eyebrow: "Facial · Los Angeles",
       titleParts: ["Tu piel,", "en su", "mejor versión"] as const,
       sub: "Rituales personalizados que combinan ciencia y sensorialidad para una piel saludable, luminosa y en equilibrio.",
       cta: "Descubrir servicios →",

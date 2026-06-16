@@ -7,8 +7,7 @@
     "description": "A purifying treatment that removes impurities, excess sebum, and dead cells, leaving the skin renewed and radiant.",
     "description_es": "Tratamiento purificante que elimina impurezas, exceso de sebo y células muertas, dejando la piel renovada y luminosa.",
     "duration": "60 min",
-    "price": "$1,200",
-    "featured": true
+    "price": "$1,200"
   },
   {
     "id": 2,
@@ -18,8 +17,7 @@
     "description": "An infusion of hydrating actives that restores moisture balance and provides lasting softness to dry or dehydrated skin.",
     "description_es": "Infusión de activos hidratantes que restauran el equilibrio hídrico y aportan suavidad duradera a pieles secas o deshidratadas.",
     "duration": "50 min",
-    "price": "$1,400",
-    "featured": true
+    "price": "$1,400"
   },
   {
     "id": 3,
@@ -29,8 +27,7 @@
     "description": "Controlled exfoliation with next-generation acids to even skin tone, reduce dark spots, and stimulate cell renewal.",
     "description_es": "Exfoliación controlada con ácidos de última generación para uniformar tono, reducir manchas y estimular la renovación celular.",
     "duration": "45 min",
-    "price": "$1,600",
-    "featured": true
+    "price": "$1,600"
   },
   {
     "id": 4,
@@ -40,8 +37,7 @@
     "description": "Deep-heat technology that stimulates collagen, firms the facial oval, and smooths expression lines.",
     "description_es": "Tecnología de calor profundo que estimula el colágeno, reafirma el óvalo facial y suaviza líneas de expresión.",
     "duration": "55 min",
-    "price": "$2,200",
-    "featured": true
+    "price": "$2,200"
   },
   {
     "id": 5,
@@ -51,8 +47,7 @@
     "description": "A specialized massage that activates circulation, reduces inflammation, and decongests the face for fresh, defined skin.",
     "description_es": "Masaje especializado que activa la circulación, reduce inflamación y descongestiona el rostro para una piel fresca y definida.",
     "duration": "40 min",
-    "price": "$1,100",
-    "featured": false
+    "price": "$1,100"
   },
   {
     "id": 6,
@@ -62,8 +57,7 @@
     "description": "A targeted protocol with sebum-normalizing and antibacterial actives for acne-prone skin. Includes cleansing, peel, and purifying mask.",
     "description_es": "Protocolo específico con activos sebonormalizantes y antibacterianos para pieles con tendencia acnéica. Incluye limpieza, peeling y máscara purificante.",
     "duration": "70 min",
-    "price": "$1,800",
-    "featured": false
+    "price": "$1,800"
   },
   {
     "id": 7,
@@ -74,8 +68,7 @@
     "description": "An express session of cleansing + hydration + draining massage. Ideal for tired skin or before a special event.",
     "description_es": "Sesión express de limpieza + hidratación + masaje drenante. Ideal para piel cansada o antes de un evento especial.",
     "duration": "90 min",
-    "price": "$2,500",
-    "featured": false
+    "price": "$2,500"
   },
   {
     "id": 8,
@@ -86,8 +79,7 @@
     "description": "Four sessions of progressive peeling + deep hydration. A protocol designed to unify tone and restore natural glow in one month.",
     "description_es": "Cuatro sesiones de peeling progresivo + hidratación profunda. Protocolo diseñado para unificar tono y recuperar el brillo natural en un mes.",
     "duration": "4 sessions",
-    "price": "$5,200",
-    "featured": false
+    "price": "$5,200"
   },
   {
     "id": 9,
@@ -98,7 +90,6 @@
     "description": "Three sessions of facial radiofrequency + lifting with sculptor massage. Visible results from the very first session.",
     "description_es": "Tres sesiones de radiofrecuencia facial + lifting con masaje sculptor. Resultados visibles desde la primera sesión.",
     "duration": "3 sessions",
-    "price": "$6,000",
-    "featured": false
+    "price": "$6,000"
   }
 ]

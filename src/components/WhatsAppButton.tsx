@@ -1,6 +1,6 @@
 export default function WhatsAppButton() {
   // Replace with Lucila's actual WhatsApp number (digits only, with country code)
-  const phoneNumber = "13239999999"; // e.g. 1 (323) 999-9999 → 13239999999
+  const phoneNumber = "12138032393"; // e.g. 1 (323) 999-9999 → 13239999999
   const message = "Hi! I'd like to book an appointment at Lumiere Wellness Center.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

@@ -370,7 +370,7 @@ h1, h2, h3, h4 {
 /* ============================================================
    FEATURED SERVICES
    ============================================================ */
-.services-section { background: var(--color-white); }
+.services-section { background: var(--color-bg); }
 
 .services-section__header {
   display: flex;
@@ -393,7 +393,7 @@ h1, h2, h3, h4 {
 }
 
 .service-card {
-  background: var(--color-bg);
+  background: var(--color-white);
   border-radius: var(--radius-lg);
   overflow: hidden;
   display: flex;
@@ -725,6 +725,31 @@ h1, h2, h3, h4 {
   font-size: 0.75rem;
   letter-spacing: 0.04em;
 }
+
+.footer__social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer__social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 50%;
+  color: rgba(255,255,255,0.7);
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+
+.footer__social a:hover {
+  border-color: var(--color-accent);
+  color: var(--color-white);
+  background: var(--color-accent);
+}
+
+.footer__social svg { width: 18px; height: 18px; }
 
 /* ============================================================
    CATALOG PAGE

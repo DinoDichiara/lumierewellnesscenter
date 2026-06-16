@@ -17,31 +17,41 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "(310) 555-0100",
+    value: "(213) 803-2393",
     sub: "Mon–Fri, 9am–6pm PT",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "hello@labeautyla.com",
+    value: "lumierewellnesscenter@gmail.com",
     sub: "We reply within 24 hours",
   },
-  {
-    icon: Clock,
-    label: "Studio Hours",
-    value: "Mon–Sat: 10am – 7pm",
-    sub: "Sun: 11am – 5pm",
-  },
+  // { Not Ready Yet
+  //   icon: Clock,
+  //   label: "Studio Hours",
+  //   value: "Mon–Sat: 10am – 7pm",
+  //   sub: "Sun: 11am – 5pm",
+  // },
 ];
 
 const serviceOptions = [
-  "Custom Facial",
-  "Lash Extensions",
-  "Brow Design",
-  "Chemical Peel",
+  "Facial Escencial",
+  "Plasma Acne Facial",
+  "Hydrafacial",
+  "Lift+Facial",
+  "brightening facial",
+  "Sensitive Skin Facial",
+  "Microdermabrasion",
+  "Microdermabrasion + Facial",
+  "Chemical Peel Facial (Superficial)",
+  "Luxury Spa Facial",
+  "Lash lift",
+  "Brow lamination",
+  "Tint lash and brow",
+  "Waxing",
+  "WBody scrubs",
+  "Back facil",
   "Dermaplaning",
-  "Waxing Services",
-  "Skin Consultation",
 ];
 
 type FormData = {
@@ -269,16 +279,8 @@ export default function ContactPage() {
                 Calendly Scheduler
               </p>
               <p className="text-studio-muted text-sm max-w-xs leading-relaxed">
-                {/*
-                  Replace this entire <div> block with your Calendly inline embed.
-                  Example:
-                  <div
-                    className="calendly-inline-widget"
-                    data-url="https://calendly.com/your-link"
-                    style={{ minWidth: 320, height: 700 }}
-                  />
-                  Then load the Calendly script in src/app/layout.tsx.
-                */}
+                <div class="calendly-inline-widget" data-url="https://calendly.com/lumierewellnesscenter/30min" style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                 Paste your Calendly inline embed code here to enable real-time
                 online booking.
               </p>

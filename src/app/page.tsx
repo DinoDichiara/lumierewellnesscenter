@@ -13,7 +13,6 @@ type Service = {
   description_es: string;
   duration: string;
   price: string;
-  featured: boolean;
 };
 
 function SkeletonCard() {
@@ -33,12 +32,12 @@ export default function HomePage() {
   const { t, locale } = useLanguage();
   const [featured, setFeatured] = useState<Service[] | null>(null);
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  const basePath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "");
 
   useEffect(() => {
     fetch(`${basePath}/data/services.json`)
       .then((r) => r.json())
-      .then((data: Service[]) => setFeatured(data.filter((s) => s.featured).slice(0, 3)))
+      .then((data: Service[]) => setFeatured(data.slice(0, 3)))
       .catch(() => setFeatured([]));
   }, []);
 
@@ -62,7 +61,7 @@ export default function HomePage() {
         </div>
 
         <div className="hero__img-wrap" aria-hidden="true">
-          <div className="img-placeholder">hero.jpg</div>
+          <img src="https://i.postimg.cc/XvDXfv7R/hero.jpg" alt="Hero" />
         </div>
       </section>
 

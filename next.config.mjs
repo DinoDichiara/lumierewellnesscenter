@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
+const BASE_PATH = ""; // set to "/your-path" if deployed under a sub-path
+
 const nextConfig = {
   output: "export",
-  basePath: "/lagoldenhour", // cambia "beauty" por la ruta que quieras
+  basePath: BASE_PATH,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: BASE_PATH,
+  },
   images: {
     unoptimized: true, // requerido con output: export
     remotePatterns: [
