@@ -2,7 +2,7 @@
 const BASE_PATH = ""; // set to "/your-path" if deployed under a sub-path
 
 const nextConfig = {
-  output: "export",
+  // output: "export",
   basePath: BASE_PATH,
   env: {
     NEXT_PUBLIC_BASE_PATH: BASE_PATH,
