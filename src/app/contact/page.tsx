@@ -252,7 +252,7 @@ export default function ContactPage() {
         </div>
 
         {/* ── Calendly Booking Section ──────────────────────────────── */}
-        <div className="rounded-3xl bg-studio-surface border border-studio-border overflow-hidden">
+        {/* <div className="rounded-3xl bg-studio-surface border border-studio-border overflow-hidden">
           <div className="p-8 md:p-12 border-b border-studio-border">
             <div className="max-w-xl">
               <span className="text-studio-accent text-xs font-bold tracking-[0.25em] uppercase">
@@ -267,10 +267,10 @@ export default function ContactPage() {
                 back-and-forth needed.
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* CALENDLY EMBED — paste your Calendly inline widget script/div here */}
-          <div className="min-h-[420px] flex items-center justify-center p-12 bg-studio-bg/30">
+          {/* <div className="min-h-[420px] flex items-center justify-center p-12 bg-studio-bg/30">
             <div className="text-center">
               <div className="w-16 h-16 rounded-full bg-studio-accent/10 border border-studio-accent/30 flex items-center justify-center mx-auto mb-5">
                 <Clock size={28} className="text-studio-accent" />
@@ -285,7 +285,7 @@ export default function ContactPage() {
                 online booking.
               </p>
             </div>
-          </div>
+          </div> */}
           {/* END CALENDLY EMBED */}
         </div>
       </div>
