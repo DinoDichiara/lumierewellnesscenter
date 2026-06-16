@@ -284,10 +284,10 @@ export default function ContactPage() {
                 Paste your Calendly inline embed code here to enable real-time
                 online booking.
               </p>
-            </div>
-          </div> */}
+            </div>  */}
+          {/* </div> */}
           {/* END CALENDLY EMBED */}
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );
