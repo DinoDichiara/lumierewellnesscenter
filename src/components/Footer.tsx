@@ -22,7 +22,7 @@ export default function Footer() {
 
         <div className="footer__social">
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/lumierewellnesscenter/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"

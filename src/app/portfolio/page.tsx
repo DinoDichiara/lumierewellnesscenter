@@ -166,12 +166,12 @@ export default function PortfolioPage() {
         <p className="text-center text-studio-subtle text-sm mt-16">
           Follow us on Instagram{" "}
           <a
-            href="https://instagram.com/labeautyla"
+            href="https://www.instagram.com/lumierewellnesscenter/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-studio-accent hover:underline underline-offset-2"
           >
-            @labeautyla
+            @lumierewellnesscenter
           </a>{" "}
           for the latest transformations and behind-the-scenes moments.
         </p>
