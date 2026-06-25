@@ -293,7 +293,7 @@ h1, h2, h3, h4 {
     grid-template-columns: 1fr;
     grid-template-rows: auto 55vw;
   }
-  .hero__content { padding: calc(5rem + 1rem) var(--px) 2rem; }
+  .hero__content { padding: calc(1rem + 1rem) var(--px) 2rem; }
   .hero__img-wrap .img-placeholder { min-height: 0; height: 100%; }
 }
 
@@ -494,10 +494,12 @@ h1, h2, h3, h4 {
 .about__img-wrap {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
 }
 
-.about__img-wrap .img-placeholder { height: 100%; }
+
+.about__img-wrap .img-placeholder { height: 0%; }
+.about__img-wrap img { object-position: top; }
 
 .about__title {
   font-size: clamp(2rem, 3.5vw, 2.8rem);

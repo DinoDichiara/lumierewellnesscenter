@@ -1,5 +1,5 @@
 export const IMAGES = {
-    about: "https://assets.lumierewellnesscenter.com/lumiere_media_website/IMG_3611.webp",
+    about: "https://assets.lumierewellnesscenter.com/lumiere_media_website/lucy_1.webp",
     hero: "https://assets.lumierewellnesscenter.com/lumiere_media_website/IMG_3477.webp",
     gallery_1: "https://assets.lumierewellnesscenter.com/lumiere_media_website/IMG_3611.webp",
     gallery_2: "https://assets.lumierewellnesscenter.com/lumiere_media_website/IMG_3574.webp",
