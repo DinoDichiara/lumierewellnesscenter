@@ -70,9 +70,7 @@ export default function ServicesPage() {
       {/* ── Catalog Hero ──────────────────────────────────────── */}
       <div className="catalog-hero">
         <div className="container">
-          <span className="section-label">{t.catalog.label}</span>
           <h1 className="catalog-hero__title">{t.catalog.title}</h1>
-          <p className="catalog-hero__sub">{t.catalog.sub}</p>
         </div>
       </div>
 

@@ -19,7 +19,6 @@ export const translations = {
       quote: "“Conscious care. Visible results. Genuine well-being.”",
     },
     services: {
-      label: "Treatments",
       title: "Our treatments",
       viewAll: "View all services",
       viewMore: "Learn more",
@@ -34,7 +33,7 @@ export const translations = {
     ritual: {
       label: "The process",
       title: "What does a session look like?",
-      sub: "Every visit is designed so you feel accompanied from the very first moment.",
+      sub: "Every visit is designed to support you from the very first moment.",
       steps: [
         {
           num: "Step 01",
@@ -48,8 +47,8 @@ export const translations = {
         },
         {
           num: "Step 03",
-          name: "Personalized guidance",
-          desc: "We advise you on how to maintain results at home with a routine designed specifically for you.",
+          name: "Ongoing care",
+          desc: "We design your at-home routine and follow up at every visit, so your results keep building over time.",
         },
       ] as const,
     },
@@ -59,7 +58,7 @@ export const translations = {
     },
     cta: {
       label: "Bookings",
-      title: "Book your ritual",
+      title: "Book your visit",
       sub: "Take the time you deserve. Message us and together we’ll find the perfect slot for you.",
       button: "Message us on WhatsApp",
     },
@@ -67,9 +66,7 @@ export const translations = {
       copy: "Lumiere Wellness Center. All rights reserved.",
     },
     catalog: {
-      label: "Treatment menu",
       title: "Our services",
-      sub: "Each treatment is designed with high-efficacy protocols, adapted to your skin type and goals.",
       filterAll: "All",
       consult: "Inquire",
       ctaTitle: "Not sure which treatment to choose?",
@@ -106,7 +103,6 @@ export const translations = {
       quote: "“Cuidado consciente. Resultados visibles. Bienestar genuino.”",
     },
     services: {
-      label: "Tratamientos",
       title: "Nuestros tratamientos",
       viewAll: "Ver todos los servicios",
       viewMore: "Ver más",
@@ -121,7 +117,7 @@ export const translations = {
     ritual: {
       label: "El proceso",
       title: "¿Cómo es una sesión?",
-      sub: "Cada visita está diseñada para que te sientas acompañada desde el primer momento.",
+      sub: "Cada visita está pensada para acompañarte desde el primer momento.",
       steps: [
         {
           num: "Paso 01",
@@ -136,7 +132,7 @@ export const translations = {
         {
           num: "Paso 03",
           name: "Pautas personalizadas",
-          desc: "Te asesoramos sobre cómo cuidar los resultados en casa con una rutina pensada para vos.",
+          desc: "Diseñamos tu rutina en casa y hacemos seguimiento en cada visita, para que los resultados se sostengan en el tiempo.",
         },
       ] as const,
     },
@@ -146,17 +142,15 @@ export const translations = {
     },
     cta: {
       label: "Reservas",
-      title: "Reservá tu ritual",
-      sub: "Tomáte el tiempo que merecés. Escribínos y encontramos juntas el turno perfecto para vos.",
+      title: "Reservá tu cita",
+      sub: "Tomáte el tiempo que merecés.",
       button: "Escribinos por WhatsApp",
     },
     footer: {
       copy: "Lumiere Wellness Center. Todos los derechos reservados.",
     },
     catalog: {
-      label: "Menú de tratamientos",
       title: "Nuestros servicios",
-      sub: "Cada tratamiento está diseñado con protocolos de alta eficacia, adaptados a tu tipo de piel y objetivos.",
       filterAll: "Todos",
       consult: "Consultar",
       ctaTitle: "¿Tenés dudas sobre qué tratamiento elegir?",
