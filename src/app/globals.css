@@ -783,9 +783,10 @@ h1, h2, h3, h4 {
 .filter-bar {
   background: var(--color-white);
   position: sticky;
-  top: 60px;
-  z-index: 50;
+  top: 79px;
+  z-index: 49;
   border-bottom: 1px solid rgba(209,186,157,0.3);
+  box-shadow: 0 4px 16px rgba(58, 46, 40, 0.07);
   padding-block: 1rem;
 }
 

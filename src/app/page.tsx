@@ -14,6 +14,7 @@ type Service = {
   description_es: string;
   duration: string;
   price: string;
+  image: string;
 };
 
 function SkeletonCard() {
@@ -98,7 +99,7 @@ export default function HomePage() {
               featured.map((svc, i) => (
                 <article key={svc.id} className={`service-card${i === 0 ? " service-card--featured" : ""}`}>
                   <div className="service-card__img-wrap">
-                    <div className="img-placeholder">service-{i + 1}.jpg</div>
+                    <img src={svc.image}/>
                   </div>
                   <div className="service-card__body">
                     <h3 className="service-card__name">{locale === "en" ? svc.name : svc.name_es}</h3>
@@ -118,7 +119,7 @@ export default function HomePage() {
         <div className="container">
           <div className="about__inner">
             <div className="about__img-wrap">
-              <div className="img-placeholder">about.jpg</div>
+              <img src={IMAGES.about} alt="" />
             </div>
 
             <div className="about__content">
@@ -164,10 +165,10 @@ export default function HomePage() {
           <h2 className="gallery__title" id="gallery-title">{t.gallery.title}</h2>
 
           <div className="gallery__grid" aria-label="Gallery">
-            <div className="gallery__item"><img src={IMAGES.galery_1}/></div>
-            <div className="gallery__item"><img src={IMAGES.galery_2}/></div>
-            <div className="gallery__item"><img src={IMAGES.galery_3}/></div>
-            <div className="gallery__item"><img src={IMAGES.galery_4}/></div>
+            <div className="gallery__item"><img src={IMAGES.gallery_1} alt="gallery 1"/></div>
+            <div className="gallery__item"><img src={IMAGES.gallery_2} alt="gallery 2"/></div>
+            <div className="gallery__item"><img src={IMAGES.gallery_3} alt="gallery 3"/></div>
+            <div className="gallery__item"><img src={IMAGES.gallery_4} alt="gallery 4"/></div>
           </div>
         </div>
       </section>

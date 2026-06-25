@@ -1,95 +1,175 @@
 [
   {
     "id": 1,
-    "name": "Deep Facial Cleansing",
-    "name_es": "Limpieza Facial Profunda",
+    "name": "Essential Facial",
+    "name_es": "Facial Esencial",
     "category": "Facial",
-    "description": "A purifying treatment that removes impurities and dead cells, leaving the skin renewed and radiant.",
-    "description_es": "Tratamiento purificante que elimina impurezas y células muertas, dejando la piel renovada y luminosa.",
+    "description": "A foundational facial that cleanses, tones, and nourishes the skin — perfect for maintaining a healthy, radiant complexion.",
+    "description_es": "Facial base que limpia, tonifica y nutre la piel para mantener un cutis sano y luminoso.",
     "duration": "60 min",
-    "price": "$1,200"
+    "price": "$100",
+    "image": "https://assets.lumierewellnesscenter.com/lumiere_media_website/IMG_3517.webp"
   },
   {
     "id": 2,
-    "name": "Intensive Hydration",
-    "name_es": "Hidratación Intensiva",
+    "name": "Plasma Acne Facial",
+    "name_es": "Facial Plasma Anti-Acné",
     "category": "Facial",
-    "description": "An infusion of hydrating actives that restores moisture balance and provides lasting softness to dry or dehydrated skin.",
-    "description_es": "Infusión de activos hidratantes que restauran el equilibrio hídrico y aportan suavidad duradera a pieles secas o deshidratadas.",
-    "duration": "50 min",
-    "price": "$1,400"
+    "description": "Advanced plasma technology targets acne-causing bacteria, reduces inflammation, and promotes clearer, calmer skin.",
+    "description_es": "Tecnología de plasma que elimina bacterias causantes del acné, reduce la inflamación y mejora la apariencia de la piel.",
+    "duration": "60 min",
+    "price": "$115",
+    "image": "https://assets.lumierewellnesscenter.com/lumiere_media_website/IMG_5267.webp"
   },
   {
     "id": 3,
-    "name": "Gentle Chemical Peel",
-    "name_es": "Peeling Químico Suave",
+    "name": "HydraFacial",
+    "name_es": "HydraFacial",
     "category": "Facial",
-    "description": "Controlled exfoliation with next-generation acids to even skin tone, reduce dark spots, and stimulate cell renewal.",
-    "description_es": "Exfoliación controlada con ácidos de última generación para uniformar tono, reducir manchas y estimular la renovación celular.",
-    "duration": "45 min",
-    "price": "$1,600"
+    "description": "A multi-step treatment that deeply cleanses, exfoliates, extracts, and infuses the skin with hydrating serums for an instant glow.",
+    "description_es": "Tratamiento multietapa que limpia, exfolia, extrae e infunde sueros hidratantes para un brillo inmediato.",
+    "duration": "60 min",
+    "price": "$150",
+    "image": "https://assets.lumierewellnesscenter.com/lumiere_media_website/IMG_3499.webp"
   },
   {
     "id": 4,
-    "name": "Facial Radiofrequency",
-    "name_es": "Radiofrecuencia Facial",
+    "name": "Lift + Facial",
+    "name_es": "Lift + Facial",
     "category": "Facial",
-    "description": "Deep-heat technology that stimulates collagen, firms the facial oval, and smooths expression lines.",
-    "description_es": "Tecnología de calor profundo que estimula el colágeno, reafirma el óvalo facial y suaviza líneas de expresión.",
-    "duration": "55 min",
-    "price": "$2,200"
+    "description": "A lifting and firming facial that combines toning techniques and actives to redefine the facial contour and restore a youthful appearance.",
+    "description_es": "Facial reafirmante que combina técnicas de lifting y activos para redefinir el contorno facial y rejuvenecer la apariencia.",
+    "duration": "60 min",
+    "price": "$140"
   },
   {
     "id": 5,
-    "name": "Facial Lymphatic Drainage",
-    "name_es": "Drenaje Linfático Facial",
+    "name": "Brightening Facial",
+    "name_es": "Facial Iluminador",
     "category": "Facial",
-    "description": "A specialized massage that activates circulation, reduces inflammation, and decongests the face for fresh, defined skin.",
-    "description_es": "Masaje especializado que activa la circulación, reduce inflamación y descongestiona el rostro para una piel fresca y definida.",
-    "duration": "40 min",
-    "price": "$1,100"
+    "description": "Targets dullness and uneven skin tone with brightening actives that reveal a more luminous, even complexion.",
+    "description_es": "Combate la opacidad y el tono irregular con activos iluminadores que revelan una piel más brillante y uniforme.",
+    "duration": "60 min",
+    "price": "$140"
   },
   {
     "id": 6,
-    "name": "Anti-Acne Treatment",
-    "name_es": "Tratamiento Anti-Acné",
+    "name": "Sensitive Skin Facial",
+    "name_es": "Facial Piel Sensible",
     "category": "Facial",
-    "description": "A targeted protocol with sebum-normalizing and antibacterial actives for acne-prone skin. Includes cleansing, peel, and purifying mask.",
-    "description_es": "Protocolo específico con activos sebonormalizantes y antibacterianos para pieles con tendencia acnéica. Incluye limpieza, peeling y máscara purificante.",
-    "duration": "70 min",
-    "price": "$1,800"
+    "description": "A gentle, calming treatment formulated for reactive and sensitive skin — soothes redness and restores the skin's natural balance.",
+    "description_es": "Tratamiento suave y calmante para pieles reactivas y sensibles. Alivia el enrojecimiento y restaura el equilibrio natural.",
+    "duration": "60 min",
+    "price": "$130"
   },
   {
     "id": 7,
-    "name": "Complete Detox Ritual",
-    "name_es": "Ritual Detox Completo",
-    "category": "Packages",
-    "category_es": "Paquetes",
-    "description": "An express session of cleansing + hydration + draining massage. Ideal for tired skin or before a special event.",
-    "description_es": "Sesión express de limpieza + hidratación + masaje drenante. Ideal para piel cansada o antes de un evento especial.",
-    "duration": "90 min",
-    "price": "$2,500"
+    "name": "Microdermabrasion",
+    "name_es": "Microdermoabrasión",
+    "category": "Facial",
+    "description": "A non-invasive exfoliation treatment that buffs away dead skin cells, smooths texture, and stimulates cell renewal for fresher skin.",
+    "description_es": "Tratamiento de exfoliación no invasivo que elimina células muertas, suaviza la textura y estimula la renovación celular.",
+    "duration": "60 min",
+    "price": "$75"
   },
   {
     "id": 8,
-    "name": "Radiance Pack ×4",
-    "name_es": "Pack Luminosidad ×4",
-    "category": "Packages",
-    "category_es": "Paquetes",
-    "description": "Four sessions of progressive peeling + deep hydration. A protocol designed to unify tone and restore natural glow in one month.",
-    "description_es": "Cuatro sesiones de peeling progresivo + hidratación profunda. Protocolo diseñado para unificar tono y recuperar el brillo natural en un mes.",
-    "duration": "4 sessions",
-    "price": "$5,200"
+    "name": "Microdermabrasion + Facial",
+    "name_es": "Microdermoabrasión + Facial",
+    "category": "Facial",
+    "description": "The power of microdermabrasion combined with a customized facial for deeper exfoliation and enhanced skin nourishment.",
+    "description_es": "La potencia de la microdermoabrasión combinada con un facial personalizado para mayor exfoliación y nutrición profunda.",
+    "duration": "60 min",
+    "price": "$130"
   },
   {
     "id": 9,
-    "name": "Anti-Aging Pack ×3",
-    "name_es": "Pack Anti-Edad ×3",
-    "category": "Packages",
-    "category_es": "Paquetes",
-    "description": "Three sessions of facial radiofrequency + lifting with sculptor massage. Visible results from the very first session.",
-    "description_es": "Tres sesiones de radiofrecuencia facial + lifting con masaje sculptor. Resultados visibles desde la primera sesión.",
-    "duration": "3 sessions",
-    "price": "$6,000"
+    "name": "Chemical Peel Facial (Superficial)",
+    "name_es": "Peeling Químico Facial (Superficial)",
+    "category": "Facial",
+    "description": "A controlled superficial peel that refines skin texture, fades dark spots, and promotes a brighter, more even complexion.",
+    "description_es": "Peeling superficial controlado que refina la textura, difumina manchas y promueve un cutis más brillante y uniforme.",
+    "duration": "60 min",
+    "price": "$150"
+  },
+  {
+    "id": 10,
+    "name": "Luxury Spa Facial",
+    "name_es": "Facial Spa de Lujo",
+    "category": "Facial",
+    "description": "An indulgent, full-sensory facial experience with premium products, massage techniques, and deep nourishment for total skin rejuvenation.",
+    "description_es": "Una experiencia facial de lujo con productos premium, técnicas de masaje y nutrición profunda para una rejuvenación total.",
+    "duration": "60 min",
+    "price": "$180"
+  },
+  {
+    "id": 11,
+    "name": "Lash Lift",
+    "name_es": "Lifting de Pestañas",
+    "category": "Facial",
+    "description": "A semi-permanent treatment that lifts and curls your natural lashes from the root, giving your eyes a wide-open, defined look.",
+    "description_es": "Tratamiento semipermanente que eleva y riza las pestañas naturales desde la raíz para una mirada más abierta y definida.",
+    "duration": "60 min",
+    "price": "$70"
+  },
+  {
+    "id": 12,
+    "name": "Brow Lamination",
+    "name_es": "Laminado de Cejas",
+    "category": "Facial",
+    "description": "A brow styling treatment that sets hairs in a uniform, full shape — achieving that fluffy, groomed look that lasts weeks.",
+    "description_es": "Tratamiento de estilizado de cejas que fija los pelos en una forma uniforme y abundante con un resultado duradero.",
+    "duration": "60 min",
+    "price": "$70"
+  },
+  {
+    "id": 13,
+    "name": "Tint Lash and Brow",
+    "name_es": "Tinte de Pestañas y Cejas",
+    "category": "Facial",
+    "description": "A professional tinting service for lashes and brows that adds depth and definition without the daily need for makeup.",
+    "description_es": "Tinte profesional para pestañas y cejas que añade profundidad y definición sin necesidad de maquillaje diario.",
+    "duration": "60 min",
+    "price": "$50"
+  },
+  {
+    "id": 14,
+    "name": "Waxing",
+    "name_es": "Depilación con Cera",
+    "category": "Facial",
+    "description": "Smooth, precise hair removal using professional wax — leaving skin clean and hair-free for weeks. Price per zone.",
+    "description_es": "Depilación suave y precisa con cera profesional. Piel limpia y libre de vello por semanas. Precio por zona.",
+    "duration": "60 min",
+    "price": "$40"
+  },
+  {
+    "id": 15,
+    "name": "Body Scrubs",
+    "name_es": "Exfoliación Corporal",
+    "category": "Facial",
+    "description": "A full-body exfoliation treatment that sloughs away dead skin cells, leaving the skin soft, smooth, and deeply refreshed.",
+    "description_es": "Tratamiento de exfoliación corporal que elimina células muertas y deja la piel suave, lisa y profundamente renovada.",
+    "duration": "60 min",
+    "price": "$40"
+  },
+  {
+    "id": 16,
+    "name": "Back Facial",
+    "name_es": "Facial de Espalda",
+    "category": "Facial",
+    "description": "A thorough cleansing and treatment protocol designed specifically for the back — targeting congestion, breakouts, and uneven texture.",
+    "description_es": "Protocolo de limpieza profunda y tratamiento específico para la espalda. Combate la congestión, el acné y la textura irregular.",
+    "duration": "60 min",
+    "price": "$250"
+  },
+  {
+    "id": 17,
+    "name": "Dermaplaning",
+    "name_es": "Dermaplaning",
+    "category": "Facial",
+    "description": "A gentle exfoliation technique using a sterile blade to remove dead skin cells and peach fuzz, revealing smoother, brighter skin instantly.",
+    "description_es": "Técnica de exfoliación con bisturí estéril que elimina células muertas y vello fino para una piel más lisa y luminosa al instante.",
+    "duration": "60 min",
+    "price": "$100"
   }
 ]
